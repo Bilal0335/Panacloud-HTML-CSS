@@ -113,9 +113,12 @@ a {
 .home .content a {
   text-decoration: none;
   color: black;
-  background-color: orange;
+  background-color: rgba(255, 166, 0, 0.952);
   padding: 5px 20px;
   border-radius: 5px;
+}
+.home .content a:hover{
+  background-color: orange;
 }
 .center-circ {
   margin-top: 50px;
@@ -126,12 +129,78 @@ a {
 }
 .center-circ .circle01 {
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
+  height: 10px;
+  width: 10px;
 }
 .center-circ .circle01:nth-child(1) {
   background-color: white;
 }
 .center-circ .circle01:nth-child(n + 2) {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  padding: 0 20px;
+}
+.box-container h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.box-container span {
+  color: #56ab2f;
+}
+.box-container p {
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+.sub-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+}
+.icon-box {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(211, 211, 211, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.icon-box i {
+  font-size: 3rem;
+}
+.heading-box {
+  margin-top: 5px;
+  padding: 10px 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.heading-box h2 {
+  font-size: 20px;
+  font-style: oblique;
+}
+.heading-box p {
+  width: 171px;
+  margin: 0 auto;
 }
