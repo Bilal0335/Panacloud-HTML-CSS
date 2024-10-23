@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  background: white;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav ul li a {
+  color: rgb(39, 38, 38);
+  text-transform: uppercase;
+  transition: font 0.3s, color 0.3s;
+  cursor: pointer;
+  padding: 5px 0;
+}
+nav ul li a:hover {
+  font-weight: 700;
+}
+/* Creating the underline effect */
+nav ul li a::after {
+  content: ""; /* Necessary for the pseudo-element to work */
+  display: block; /* Allows it to be block-level */
+  width: 0; /* Start width is 0 */
+  height: 4px; /* Height of the underline */
+  background-color: yellow; /* Color of the underline */
+  transition: width 0.3s; /* Transition effect for width */
+  position: absolute; /* Position it absolutely */
+  left: 0; /* Align to the left */
+  bottom: -2px; /* Position it slightly below the text */
+}
+nav ul li a:hover::after {
+    width: 100%; /* Expand to full width on hover */
+}
+nav ul li {
+    position: relative; /* Positioning context for the pseudo-element */
+}
+/* nav ul li a.active{
+    color: yellow;
+    text-decoration: underline;
+} */
+a {
+  text-decoration: none;
+}
