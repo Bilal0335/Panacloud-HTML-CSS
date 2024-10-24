@@ -116,6 +116,7 @@ a {
   background-color: rgba(255, 166, 0, 0.952);
   padding: 5px 20px;
   border-radius: 5px;
+  border-bottom: 2px solid orangered;
 }
 .home .content a:hover {
   background-color: orange;
@@ -209,12 +210,15 @@ span {
 .about-sec {
   background-color: rgba(180, 171, 171, 0.342);
 }
+.about-sec h3 {
+  margin-top: 3rem;
+}
 .about-container {
   display: flex;
   align-items: center;
   gap: 30px;
   justify-content: flex-start;
-  padding: 0 20px;
+  padding: 0 1.25rem;
 }
 .about-container p {
   margin-top: 2rem;
@@ -230,10 +234,12 @@ span {
   text-decoration: none;
   color: black;
   background-color: rgba(255, 166, 0, 0.952);
-  padding: 5px 20px;
+  padding: 0.3125rem 1.25rem;
   border-radius: 5px;
   text-align: left;
   display: inline-block;
+  margin-top: 0.625rem;
+  border-bottom: 2px solid orangered;
 }
 .left-btn:hover {
   background-color: orange;
