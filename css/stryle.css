@@ -278,32 +278,34 @@ span {
 }
 
 .service-star i {
-  left: -31px;
-  bottom: -31px;
+  left: -1.9375rem;
+  bottom: -1.9375rem;
   position: absolute;
   background-color: orange;
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  font-size: 30px;
+  font-size: 1.875rem;
   color: red;
+  
 }
 .service-card {
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 0.625rem;
+padding: 0.625rem 1.125rem;
+
   background-color: rgba(211, 211, 211, 0.329);
 }
 .service-card h2 {
-  margin-top: 20px;
-  font-size: 20px;
+  margin-top: 1.78rem;
+  font-size: 1.25rem;
 }
 .service-card p {
   color: rgb(110, 108, 108);
-  margin-top: 2px;
-  margin-bottom: 5px;
+  margin-top: 0.125rem;
+  margin-bottom: 0.3125rem;
 }
 .service-card a {
   color: #0b8f16;
