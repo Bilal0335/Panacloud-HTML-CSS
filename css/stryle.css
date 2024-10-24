@@ -217,13 +217,14 @@ span {
   display: flex;
   align-items: center;
   gap: 30px;
-  justify-content: flex-start;
+  /* justify-content: ; */
   padding: 0 1.25rem;
 }
 .about-container p {
   margin-top: 2rem;
   text-align: left;
   margin-bottom: 0.5rem;
+  width: 80%;
 }
 .left-side {
   text-align: left;
@@ -243,4 +244,15 @@ span {
 }
 .left-btn:hover {
   background-color: orange;
+}
+.right-side {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.right-side img {
+  width: 31.25rem;
+  margin-left: -8rem;
+  margin-right: -55px;
 }
