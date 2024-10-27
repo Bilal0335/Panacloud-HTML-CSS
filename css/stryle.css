@@ -66,7 +66,11 @@ a {
   text-align: center;
   padding: 0 20px;
 }
+
 .home .content {
+  background-image: url("/img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,8 +78,8 @@ a {
   width: 100%;
   max-width: 100%;
   height: 80vh;
-  background: linear-gradient(135deg, #a8e063, #56ab2f);
-  overflow-x: hidden;
+  /* background-position: center; */
+  /* overflow-x: hidden; */
 }
 
 .home .content h1::before,
@@ -83,7 +87,7 @@ a {
   content: "";
   width: 85%;
   height: 40px;
-  background-color: #56ab2f;
+  background-color: #9cdb4f;
   position: absolute;
   top: 20%;
 }
@@ -179,18 +183,19 @@ span {
   width: 150px;
   text-align: center;
 }
-.icon-box {
-  width: 100px;
-  height: 100px;
+.image-box {
+  width: 150px;
+  height: 150px;
   background-color: rgba(211, 211, 211, 0.5);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  padding: 20px;
 }
-.icon-box i {
-  font-size: 3rem;
+.image-box image {
+  width: 40%;
 }
 .heading-box {
   margin-top: 5px;
@@ -207,33 +212,42 @@ span {
   width: 171px;
   margin: 0 auto;
 }
+
 .about-sec {
-  background-color: rgba(180, 171, 171, 0.342);
+  /* background-image: url("../panacloud\ website\ assest/about.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+  width: 100%; */
+
+  background-image: url("../panacloud\ website\ assest/about.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: lightblue;
+  padding: 0px 10px;
+  min-height: 200px;
+  margin-top: 20px;
 }
 .about-sec h3 {
-  margin-top: 3rem;
+  margin-top: 0rem;
 }
-.about-container {
+.about-side {
   display: flex;
-  align-items: center;
-  gap: 30px;
-  padding: 0 1.25rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
 }
-.about-container p {
-  margin-top: 2rem;
-  text-align: left;
-  margin-bottom: 0.5rem;
-  width: 70%;
-}
-.about-container p {
-  width: 70%;
-  margin-bottom: 2rem;
-}
-.left-side {
-  text-align: left;
+.about-side p {
   margin-bottom: 10px;
-  margin-top: 10px;
+  text-align: left;
+  width: 50%;
+  padding: 20px 10px;
 }
+.about-side a {
+  text-align: left;
+}
+
 .left-btn {
   text-decoration: none;
   color: black;
@@ -247,17 +261,6 @@ span {
 }
 .left-btn:hover {
   background-color: orange;
-}
-.right-side {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-}
-
-.right-side img {
-  width: 31.25rem;
-  margin-left: -8rem;
-  margin-right: -55px;
 }
 /* Our srvice */
 .service-container {
@@ -449,4 +452,3 @@ span {
   top: 24%;
   left: 24%;
 }
-
