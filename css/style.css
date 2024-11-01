@@ -78,8 +78,6 @@ a {
   width: 100%;
   max-width: 100%;
   height: 80vh;
-  /* background-position: center; */
-  /* overflow-x: hidden; */
 }
 
 .home .content h1::before,
@@ -357,7 +355,7 @@ span {
 .image-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr);
   gap: 1px;
   max-width: 1200px;
   margin: 0 auto;
@@ -367,13 +365,13 @@ span {
 
 .grid-item {
   background-color: #f2f2f2;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .grid-item img {
-  width: 100%; 
-  height: auto; 
-  display: block; 
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .process {
   margin-top: 50px;
@@ -401,7 +399,7 @@ span {
   padding: 50px 40px;
   display: flex;
   justify-content: space-evenly;
-  align-items:flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -415,8 +413,8 @@ span {
 
 .img-process {
   border: 3px solid grey;
-  width:80px;
-  height:80px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -459,7 +457,87 @@ span {
 }
 
 .text-process p {
-  font-size: 12px; 
+  font-size: 12px;
   width: 150px;
   text-align: center;
+}
+
+.people_aboutUs {
+  background-color: #eeeeee;
+  padding: 20px;
+  margin-top: 10px;
+  position: relative;
+}
+.people_aboutUs .main-para {
+  text-align: center;
+}
+
+.people_grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  min-width: 700px;
+  position: relative;
+}
+.people_grid::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #c7bebe8f;
+  transform: translateX(-50%);
+}
+.people_grid::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #c7bebe8f;
+  transform: translateY(-50%);
+}
+.people {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.img_people {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.img_people img {
+  width: 100px;
+  height: auto;
+}
+
+.people_content p {
+  text-align: left;
+  max-width: 90%;
+  margin: 0;
+}
+.people_aboutUs .center-circ .circle01 {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.people_aboutUs .center-circ .circle01:nth-child(1) {
+  background-color: rgba(241, 85, 12, 0.986); 
+}
+
+.people_aboutUs .center-circ .circle01:nth-child(2) {
+  background-color: rgb(255, 153, 0); 
+}
+
+.people_aboutUs .center-circ .circle01:nth-child(3) {
+  background-color: rgb(230, 168, 76); 
 }
